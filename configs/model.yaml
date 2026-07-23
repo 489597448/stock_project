@@ -1,0 +1,20 @@
+model:
+  type: lightgbm
+  params:
+    n_estimators: 1000
+    learning_rate: 0.05
+    num_leaves: 31
+    max_depth: -1               # 不限制深度，靠叶子数控制
+    min_child_samples: 30       # 适当放宽
+    class_weight: balanced
+    random_state: 42
+    subsample: 0.8              # 加采样防过拟合
+    colsample_bytree: 0.8       # 加列采样防过拟合
+    
+split:
+  train_end: 2024-12-31
+  valid_end: 2025-12-31
+
+predict:
+  score_threshold: 0.75
+  top_n: 10

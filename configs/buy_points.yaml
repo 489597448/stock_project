@@ -1,0 +1,66 @@
+default_buy_point: buy_point_1
+
+buy_points:
+  buy_point_1:
+    candidate_rule: bottom_reversal_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 15
+      max_drawdown_pct: 8
+
+  buy_point_2:
+    candidate_rule: pivot_confirm_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 18
+      max_drawdown_pct: 6
+
+  buy_point_3:
+    candidate_rule: v_shape_candidate_v1
+    label_rule:
+      future_return_days: 15
+      future_drawdown_days: 10
+      target_return_pct: 15
+      max_drawdown_pct: 8
+
+  buy_point_4:
+    candidate_rule: platform_breakout_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 12
+      max_drawdown_pct: 6
+
+  buy_point_5:
+    candidate_rule: pullback_confirm_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 12
+      max_drawdown_pct: 6
+
+  buy_point_6:
+    candidate_rule: trend_continuation_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 15
+      max_drawdown_pct: 7
+
+  buy_point_7:
+    candidate_rule: strong_pullback_rebound_v1
+    label_rule:
+      future_return_days: 20
+      future_drawdown_days: 10
+      target_return_pct: 15
+      max_drawdown_pct: 8
+
+  buy_point_8:
+    candidate_rule: volume_turning_point_v1
+    label_rule:
+      future_return_days: 15
+      future_drawdown_days: 7
+      target_return_pct: 10
+      max_drawdown_pct: 6
